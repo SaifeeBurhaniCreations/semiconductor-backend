@@ -1,0 +1,94 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_09",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide scientifically accurate and safe explanations without giving proprietary recipes, process parameters, or company-specific flows."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a silicon bridge in advanced packaging?",
+      "answer": "A silicon bridge is a small piece of silicon with fine-pitch wiring embedded in a substrate to connect two dies with high bandwidth and low latency."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does interposer thickness affect performance?",
+      "answer": "Thinner interposers reduce via length and parasitic inductance, improving signal integrity and lowering power consumption in high-speed interconnects."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is power integrity in multi-die packages?",
+      "answer": "Power integrity ensures stable and low-noise power delivery to each die, preventing voltage droop, switching noise, and timing failures."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are backside RDL layers used in logic dies?",
+      "answer": "Backside RDL enables more flexible routing, improved power distribution, and reduced via congestion compared to frontside interconnects."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are SiC Schottky diodes used in power modules?",
+      "answer": "SiC Schottky diodes offer low reverse recovery charge, reducing switching losses and improving efficiency in high-frequency power converters."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a GaN power stage?",
+      "answer": "A GaN power stage integrates GaN transistors with drivers and sometimes passive components to deliver compact, high-efficiency power conversion solutions."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is bowing in substrates or panels?",
+      "answer": "Bowing is a large-scale curvature of substrates or panels caused by uneven stresses, affecting alignment accuracy during assembly."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does dielectric thickness affect high-frequency routing?",
+      "answer": "Thinner dielectrics reduce trace inductance and support controlled impedance routing, improving performance at mmWave and RF frequencies."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is chip-package interaction (CPI)?",
+      "answer": "CPI refers to mechanical stress transferred between a chip and its package, potentially causing cracking, delamination, or performance shifts."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is transient thermal analysis important in power modules?",
+      "answer": "Transient analysis evaluates how heat spreads during rapid load changes, ensuring safe operation under pulsed or dynamic conditions."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is interconnect parasitic inductance?",
+      "answer": "Parasitic inductance is the unwanted inductive behavior of wiring and bumps, affecting switching speed and signal quality in high-performance designs."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are glass interposers attractive for large form-factor designs?",
+      "answer": "Glass provides excellent dimensional stability, low warpage, and low dielectric loss, making it suitable for large-area, high-frequency integration."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is whisker growth in metallic finishes?",
+      "answer": "Metal whiskers are thin filaments that spontaneously grow from certain finishes, potentially causing electrical shorts in fine-pitch assemblies."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is coefficient of friction relevant in die-to-die bonding?",
+      "answer": "Friction affects die movement during bonding alignment; too much or too little friction can impact placement accuracy and bonding quality."
+    }
+  ]
+}

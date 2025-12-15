@@ -1,0 +1,88 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_05",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Always provide technically correct, safe, and process-agnostic explanations. Do not provide proprietary values or company-specific recipes."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the role of an interposer in heterogeneous integration?",
+      "answer": "An interposer acts as an intermediate routing layer that connects multiple dies with high bandwidth and low latency, enabling efficient integration of logic, memory, and accelerators."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a fan-out RDL structure?",
+      "answer": "A fan-out RDL structure redistributes die pads outward using multiple metal layers, enabling high-density I/O and supporting multi-die or chiplet configurations."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is bump co-planarity and why is it important?",
+      "answer": "Bump co-planarity refers to the height uniformity of solder or micro-bumps. Good co-planarity ensures reliable die-to-substrate contact and prevents open connections."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does EMI affect high-density packages?",
+      "answer": "Electromagnetic interference can disrupt high-speed signaling, degrade signal integrity, and cause data errors in dense interconnect systems with tight geometries."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is copper pillar used instead of traditional solder bumps?",
+      "answer": "Copper pillars provide better electrical performance, improved thermal conductivity, and tighter pitch capability, enabling high-density packaging."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a gate driver in a SiC or GaN power module?",
+      "answer": "A gate driver is a control circuit that manages the switching behavior of power devices, ensuring fast transitions and protecting against over-voltage or short-circuit conditions."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is double-sided sintering used for SiC power modules?",
+      "answer": "Double-sided sintering enhances thermal pathways and reduces electrical resistance by providing strong, void-free connections on both sides of the die."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is thermal runaway in power electronics?",
+      "answer": "Thermal runaway occurs when increased temperature causes higher losses, which further increase heat generation, potentially leading to device failure."
+    },
+
+    {
+      "type": "qa",
+      "question": "What materials are commonly used in high-frequency substrates?",
+      "answer": "Low-loss materials such as glass, BT resin, PTFE composites, and ceramic-reinforced laminates are used to support mmWave and RF performance."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a die shift in packaging processes?",
+      "answer": "Die shift refers to the movement of a die from its intended position during molding or RDL formation. Excessive shift can cause misalignment and interconnect failures."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is delamination a major reliability concern?",
+      "answer": "Delamination separates layers within the package, reducing mechanical integrity, increasing moisture ingress, and potentially causing electrical failures."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does underfill improve flip-chip reliability?",
+      "answer": "Underfill absorbs mechanical stress, reduces bump fatigue, and stabilizes the assembly during thermal cycling, improving long-term reliability."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a power cycling test?",
+      "answer": "Power cycling evaluates a device’s ability to withstand repeated heating and cooling from electrical load variations, which stresses interconnects and materials."
+    }
+  ]
+}

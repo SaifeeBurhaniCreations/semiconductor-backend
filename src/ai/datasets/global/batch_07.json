@@ -1,0 +1,88 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_07",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide correct, safe, and non-proprietary explanations. Avoid giving manufacturing parameters or company-specific processes."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is 3D stacking in semiconductor packaging?",
+      "answer": "3D stacking vertically integrates multiple dies using TSVs or hybrid bonding, reducing interconnect length and improving bandwidth for memory and logic integration."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are micro-bump heights tightly controlled in chiplet packaging?",
+           "answer": "Uniform micro-bump height ensures proper electrical contact, prevents tilt during bonding, and improves reliability under thermal cycling."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is an RDL fan-in structure?",
+      "answer": "Fan-in RDL routes signals inward toward the center of the die, supporting compact packaging formats and low-cost WLP designs."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does crosstalk occur in high-density interconnects?",
+      "answer": "Crosstalk happens when electromagnetic fields from adjacent traces couple into each other, causing signal distortion at high speeds."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the advantage of using an EMIB bridge?",
+      "answer": "EMIB uses a small silicon bridge embedded in the substrate to connect chiplets, providing high-density interconnects without a full interposer."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are SiC MOSFETs preferred for high-temperature operation?",
+      "answer": "SiC MOSFETs maintain low on-resistance, high breakdown strength, and stable switching characteristics at elevated temperatures."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a GaN enhancement-mode transistor?",
+      "answer": "An enhancement-mode GaN transistor operates in the normally-off state, improving safety and compatibility with standard gate-drive circuits."
+    },
+
+    {
+      "type": "qa",
+      "question": "How do copper traces affect package impedance?",
+      "answer": "Trace width, thickness, spacing, and dielectric material determine impedance, which must be controlled to ensure stable high-speed signal transmission."
+    },
+
+    {
+      "type": "qa",
+      "question": "What causes interfacial delamination in packaged devices?",
+      "answer": "Delamination can result from thermal stress, moisture absorption, CTE mismatch, or insufficient adhesion between materials."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is moisture sensitivity a concern in packaging?",
+      "answer": "Moisture can infiltrate materials and cause 'popcorning' during reflow, delamination, or corrosion, leading to device failure."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a molded underfill (MUF) process?",
+      "answer": "Molded underfill replaces traditional capillary underfill by forming both encapsulation and underfill during molding, improving throughput and reducing voids."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does coefficient of thermal expansion (CTE) affect solder fatigue?",
+      "answer": "Large CTE differences between materials increase mechanical stress during temperature cycling, accelerating solder fatigue and crack formation."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are low-loss dielectrics important for mmWave packaging?",
+      "answer": "Low-loss dielectrics reduce signal attenuation and phase distortion at high frequencies, ensuring performance for 5G, radar, and high-speed wireless systems."
+    }
+  ]
+}

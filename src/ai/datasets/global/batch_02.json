@@ -1,0 +1,82 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_02",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide technically accurate and safety-conscious answers. Avoid giving process parameters or proprietary manufacturing flows."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the purpose of underfill in flip-chip packaging?",
+      "answer": "Underfill increases mechanical strength, redistributes stress, and improves thermal cycling reliability by filling the gap between the die and substrate around solder bumps."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are micro-bumps used in high-density interconnects?",
+      "answer": "Micro-bumps enable fine-pitch connections between chiplets or dies, supporting high I/O counts and short interconnect lengths for high-bandwidth applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a fan-out package?",
+      "answer": "A fan-out package redistributes die pads outward using RDL layers, enabling larger I/O counts without needing a silicon interposer."
+    },
+
+    {
+      "type": "qa",
+      "question": "What role does a silicon interposer play in 2.5D packaging?",
+      "answer": "A silicon interposer provides a dense, low-loss wiring layer between multiple dies, enabling high-bandwidth connections such as HBM-to-logic links."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is warpage in advanced packaging?",
+      "answer": "Warpage refers to deformation of a package or substrate due to thermal stress or material mismatches. Excessive warpage affects assembly alignment and long-term reliability."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is thermal interface material (TIM) important in power modules?",
+      "answer": "TIM reduces the thermal resistance between power devices and heat spreaders, ensuring efficient heat transfer and improved reliability under high load conditions."
+    },
+
+    {
+      "type": "qa",
+      "question": "What makes SiC suitable for automotive inverters?",
+      "answer": "SiC offers high switching efficiency, low conduction loss, and high-temperature operation, which reduces inverter size, weight, and cooling requirements in EV systems."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a double-sided cooling structure in power modules?",
+      "answer": "Double-sided cooling attaches heat spreaders to both the top and bottom of power dies, significantly improving thermal dissipation and power density."
+    },
+
+    {
+      "type": "qa",
+      "question": "What are the benefits of GaN in high-frequency applications?",
+      "answer": "GaN’s high electron mobility and fast switching speed allow efficient power conversion at high frequencies, reducing magnetics size and improving power density."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are glass interposers attractive for RF and mmWave packaging?",
+      "answer": "Glass offers low dielectric loss, excellent flatness, and stable material properties, enabling high-performance signal integrity at mmWave frequencies."
+    },
+
+    {
+      "type": "qa",
+      "question": "What are the challenges of using glass substrates in packaging?",
+      "answer": "Challenges include via formation, CTE matching, handling fragility, and integrating multi-layer RDL structures without cracking or warping."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is heterogeneous power module integration?",
+      "answer": "Heterogeneous integration combines SiC or GaN dies with drivers, sensors, and control ICs within one module to reduce parasitics, size, and system-level losses."
+    }
+  ]
+}

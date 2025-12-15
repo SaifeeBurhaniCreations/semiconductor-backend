@@ -1,0 +1,88 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_04",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide clear, accurate, and conservative explanations. Avoid giving proprietary manufacturing parameters or internal company processes."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a 2.5D package?",
+      "answer": "A 2.5D package uses a silicon or glass interposer to provide high-density routing between multiple dies placed side by side, enabling high bandwidth with shorter interconnect paths."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does fan-out wafer-level packaging differ from fan-in WLP?",
+      "answer": "Fan-out WLP expands the I/O beyond the die footprint using RDL, while fan-in WLP keeps interconnects within the original die area. Fan-out supports higher I/O density."
+    },
+
+    {
+      "type": "qa",
+      "question": "What determines the bandwidth in chiplet interconnects?",
+      "answer": "Bandwidth is influenced by bump pitch, interconnect length, signaling method, substrate or interposer routing density, and the electrical characteristics of the materials."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a micro-bump pitch, and why is it important?",
+      "answer": "Micro-bump pitch is the center-to-center spacing between micro-bumps. Smaller pitches enable higher I/O densities and better performance for multi-die integration."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is polymer RDL used in advanced packaging?",
+      "answer": "Polymer RDL provides flexibility, low dielectric constant, and the ability to build fine-line, multi-layer structures used in fan-out and heterogeneous integration."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a TSV (Through-Silicon Via)?",
+      "answer": "A TSV is a vertical conductive via passing through a silicon die or interposer, enabling dense and low-latency interconnects in 2.5D and 3D packaging."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is thermal resistance a key parameter in power modules?",
+      "answer": "Lower thermal resistance improves heat dissipation, increases device lifetime, and prevents thermal runaway in high-power conditions."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the difference between SiC MOSFETs and GaN HEMTs?",
+      "answer": "SiC MOSFETs excel in high-voltage and high-temperature applications, while GaN HEMTs offer superior switching speed and efficiency at lower voltages."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is substrate warpage and what causes it?",
+      "answer": "Substrate warpage is bending or deformation caused by material CTE mismatch, curing stresses, or uneven heating during processing."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are glass interposers beneficial for large-area packages?",
+      "answer": "Glass provides excellent dimensional stability and low surface roughness, enabling high-precision routing across large panels without warpage."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a leadframe-based power module?",
+      "answer": "Leadframe modules use stamped copper frames for die attach and interconnection, providing robust thermal performance at lower cost for industrial and automotive power electronics."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is voiding a concern in die attach materials?",
+      "answer": "Voids reduce thermal and electrical conductivity, create hotspots, and may lead to premature device failure under high power cycling."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is wire sweep in molding processes?",
+      "answer": "Wire sweep is the lateral displacement of bonding wires caused by molding compound flow. Excessive sweep can lead to wire shorting or reliability failures."
+    }
+  ]
+}

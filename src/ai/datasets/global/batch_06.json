@@ -1,0 +1,88 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_06",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide technical explanations while avoiding proprietary details, secret manufacturing flows, or process parameters."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is hybrid bonding in semiconductor packaging?",
+      "answer": "Hybrid bonding directly bonds copper-to-copper pads and dielectric surfaces, enabling extremely fine-pitch interconnects suitable for chiplet and 3D stacking applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is signal integrity important in multi-die packages?",
+      "answer": "Poor signal integrity can introduce jitter, crosstalk, and timing errors, reducing the overall bandwidth and reliability of high-speed chiplet interconnects."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a bump-on-trace structure?",
+      "answer": "Bump-on-trace places micro-bumps directly onto narrow routing traces, enabling fine-pitch interconnects without requiring thick landing pads."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does substrate dielectric constant impact performance?",
+      "answer": "A lower dielectric constant reduces signal loss and propagation delay, improving performance in high-frequency and high-speed applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are SiC devices preferred for high-voltage power systems?",
+      "answer": "SiC devices handle high voltages with lower conduction losses and better temperature tolerance, enabling compact and efficient power conversion systems."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is reverse conduction in GaN devices?",
+      "answer": "Reverse conduction allows current to flow backward through a GaN transistor during switching transitions, helping to reduce losses in high-frequency converters."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a DBC substrate in power electronics?",
+      "answer": "A Direct Bonded Copper (DBC) substrate bonds copper directly to ceramic materials for high thermal conductivity and electrical isolation in power modules."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are AlN ceramics used in power module substrates?",
+      "answer": "Aluminum Nitride (AlN) provides high thermal conductivity and good electrical insulation, making it suitable for high-power, high-temperature modules."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a Kirchhoff-Love plate in thermal mechanics?",
+      "answer": "A Kirchhoff-Love plate is a thin-plate theory model used to evaluate bending, warpage, and stress in layered packaging structures under thermal loads."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are low-CTE materials important in glass interposers?",
+      "answer": "Low CTE materials minimize thermal stress between the interposer and the attached components, improving reliability during temperature cycling."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is electrochemical migration?",
+      "answer": "Electrochemical migration is the movement of metal ions under moisture and electrical bias, which can lead to dendrite formation and short circuits."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is mold compound flow behavior important?",
+      "answer": "Improper flow can cause wire sweep, voids, or incomplete fill, impacting the structural integrity and reliability of the final package."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a thermal spreading resistance?",
+      "answer": "Thermal spreading resistance describes how heat disperses laterally from a die into a larger substrate or heat sink. Lower spreading resistance improves cooling efficiency."
+    }
+  ]
+}

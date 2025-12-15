@@ -1,0 +1,94 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_08",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide accurate and safe explanations. Avoid giving proprietary data, manufacturing recipes, or process parameters."
+    },
+
+    {
+      "type": "qa",
+      "question": "What limits the minimum pitch of micro-bumps?",
+      "answer": "Micro-bump pitch is limited by lithography resolution, plating uniformity, underfill flow behavior, and mechanical reliability constraints."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a fine-line substrate?",
+      "answer": "A fine-line substrate supports very narrow routing lines and spaces, enabling high-density interconnects required for chiplet and AI accelerator packaging."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does return path discontinuity affect signal integrity?",
+      "answer": "Interruptions in the return current path increase loop inductance, causing reflections, noise, and degraded signal quality at high speeds."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are embedded bridges used in packaging?",
+      "answer": "Embedded bridges provide high-density interconnects between dies while reducing cost and complexity compared to full-size interposers."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is avalanche robustness in SiC devices?",
+      "answer": "Avalanche robustness describes a SiC device’s ability to withstand voltage spikes without breakdown, important for automotive and industrial power applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why do GaN devices support higher switching frequencies?",
+      "answer": "GaN’s high electron mobility and low gate charge allow rapid transitions, reducing switching losses and enabling compact, high-frequency designs."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a thick copper plating in power modules?",
+      "answer": "Thick copper plating is used to reduce electrical resistance, improve current capacity, and enhance thermal spreading in high-power packaging."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are polymer dielectrics used in RDL layers?",
+      "answer": "Polymers offer flexibility, low dielectric constants, and compatibility with fine-line patterning, making them suitable for multi-layer RDL construction."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is mechanical compliance in interconnects?",
+      "answer": "Mechanical compliance refers to an interconnect’s ability to absorb strain without cracking, critical for reliability during thermal cycling or board flexing."
+    },
+
+    {
+      "type": "qa",
+      "question": "What causes solder void formation?",
+      "answer": "Voids can form due to flux residues, trapped gas, insufficient wetting, or poor material flow, reducing thermal and electrical performance."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is dielectric breakdown?",
+      "answer": "Dielectric breakdown occurs when an insulating material can no longer withstand electric field stress, resulting in current leakage or failure."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is outgassing a concern in packaging materials?",
+      "answer": "Outgassing releases trapped gases that can cause voids, corrosion, or contamination during high-temperature assembly processes."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a package’s thermal impedance?",
+      "answer": "Thermal impedance describes a package’s dynamic thermal behavior, accounting for both steady-state resistance and transient thermal response."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are coefficient of moisture expansion (CME) values important?",
+      "answer": "Materials with high CME absorb water and expand, increasing stress during reflow and contributing to delamination or popcorning failures."
+    }
+  ]
+}

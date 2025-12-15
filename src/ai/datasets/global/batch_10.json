@@ -1,0 +1,94 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_10",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide accurate, non-confidential explanations, avoiding proprietary process flows, secret design rules, or manufacturing parameters."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a die-to-die interconnect fabric?",
+      "answer": "A die-to-die interconnect fabric is a communication interface that enables high-bandwidth, low-latency data exchange between chiplets within a package."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does micro-bump resistance impact signal quality?",
+      "answer": "High resistance increases IR drop, degrades signal edges, and can reduce bandwidth, especially in high-speed chiplet-to-chiplet links."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a semi-additive process (SAP) for substrates?",
+      "answer": "SAP is a fine-line fabrication method where thin seed layers are plated to define narrow metal lines and spaces, enabling HDI substrate routing."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is impedance matching important in RDL and substrate routing?",
+      "answer": "Impedance matching ensures minimal signal reflections, maintaining signal integrity for high-speed differential and single-ended traces."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are SiC JFETs used in some power modules?",
+      "answer": "SiC JFETs offer fast switching, high-temperature capability, and low conduction losses, suitable for demanding industrial and automotive applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a GaN gate charge, and why does it matter?",
+      "answer": "Gate charge determines how quickly a transistor can switch; GaN devices have low gate charge, enabling high-frequency, low-loss operation."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is dielectric absorption in packaging materials?",
+      "answer": "Dielectric absorption occurs when materials retain a portion of an electric charge, affecting signal behavior in high-speed and RF designs."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are ground shields used in high-frequency packages?",
+      "answer": "Ground shields reduce electromagnetic coupling, improving isolation and signal integrity in RF, mmWave, and high-speed digital circuits."
+    },
+
+    {
+      "type": "qa",
+      "question": "What causes copper pumping in solder joints?",
+      "answer": "Copper pumping occurs when thermal cycling induces vertical movement of copper pillars or traces, stressing the solder and potentially causing fatigue cracks."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is thermal gradient-induced stress?",
+      "answer": "Thermal gradients create uneven expansion across a package, generating mechanical stress that can lead to warpage or delamination."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are glass substrates advantageous for RF designs?",
+      "answer": "Glass substrates offer low dielectric loss and excellent uniformity, improving attenuation and phase stability at high frequencies."
+    },
+
+    {
+      "type": "qa",
+           "question": "What is conductive filament formation?",
+      "answer": "Conductive filament formation is a failure mechanism where metal ions migrate through dielectrics under electrical stress, eventually creating a short circuit."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is coefficient of hygroscopic expansion (CHE) important?",
+      "answer": "CHE measures how much a material expands when absorbing moisture. High CHE can increase stress during reflow and contribute to delamination."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the purpose of thermal interface materials in high-power modules?",
+      "answer": "Thermal interface materials fill microscopic gaps between surfaces to reduce thermal resistance and improve heat dissipation from power devices."
+    }
+  ]
+}

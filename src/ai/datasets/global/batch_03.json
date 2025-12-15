@@ -1,0 +1,88 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_03",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide technically correct, safety-aware, process-agnostic answers. Avoid giving confidential parameters or specific manufacturing recipes."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the benefit of chiplet architecture compared to a monolithic die?",
+      "answer": "Chiplet architectures improve yield, allow mixing of different process nodes, and provide modular performance scaling by interconnecting smaller dies within one package."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the purpose of redistribution layers in multi-die integration?",
+      "answer": "RDL enables routing between dies, fan-out of signals, and connection to package-level pads, supporting advanced architectures such as 2.5D and fan-out packages."
+    },
+
+    {
+      "type": "qa",
+      "question": "What are microvias in advanced substrates?",
+      "answer": "Microvias are small-diameter vias used to connect multiple routing layers in HDI substrates. They enable fine-pitch interconnects required for high-bandwidth modules."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is electromigration a concern in high-density interconnects?",
+      "answer": "Electromigration can cause metal atom movement under high current densities, leading to open circuits or reliability failures in fine-pitch wiring."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is thermal cycling reliability in packaging?",
+      "answer": "Thermal cycling reliability measures a package’s ability to withstand expansion and contraction caused by temperature changes without cracking or losing interconnect integrity."
+    },
+
+    {
+      "type": "qa",
+      "question": "How does coefficient of thermal expansion (CTE) mismatch affect packaging?",
+      "answer": "CTE mismatch between materials creates mechanical stress during heating and cooling, potentially causing delamination, cracking, and solder fatigue."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are wide-bandgap materials important for high-power modules?",
+      "answer": "Wide-bandgap materials like SiC and GaN sustain higher electric fields, operate at higher temperatures, and deliver better efficiency than silicon-based devices."
+    },
+
+    {
+      "type": "qa",
+      "question": "What limits GaN device adoption in very high-power applications?",
+      "answer": "Thermal challenges, substrate cost, and packaging limitations restrict GaN adoption in very high-power or high-current modules, where SiC is more suitable."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is partial discharge in power modules?",
+      "answer": "Partial discharge is a localized dielectric breakdown occurring under high voltage stress. Over time it degrades insulation and reduces module reliability."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are copper sintering materials used in power packaging?",
+      "answer": "Copper sintering provides high thermal and electrical conductivity, enabling strong die-attach bonds suitable for high-temperature operation in SiC modules."
+    },
+
+    {
+      "type": "qa",
+      "question": "What makes glass interposers suitable for advanced heterogeneous integration?",
+      "answer": "Glass interposers offer excellent planarity, low dielectric loss, and dimensional stability, making them ideal for high-frequency and high-density routing environments."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is panel-level packaging?",
+      "answer": "Panel-level packaging processes packages on large rectangular panels instead of round wafers, improving manufacturing throughput and reducing cost for fan-out and RDL structures."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is die thinning and why is it necessary?",
+      "answer": "Die thinning reduces the thickness of semiconductor dies to improve thermal performance, enable stacking, and reduce mechanical stress in advanced packages."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "dataset_name": "advanced_packaging_global_knowledge_batch_01",
+  "scope": "global",
+  "data": [
+    {
+      "type": "instruction",
+      "content": "You are an advanced semiconductor packaging assistant. Provide accurate, safety-focused, and conservative answers. Do not infer company-specific processes or confidential manufacturing flows."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is advanced semiconductor packaging?",
+      "answer": "Advanced packaging integrates multiple dies, chiplets, or components into a single high-performance module using technologies like flip-chip, RDL, 2.5D interposers, and heterogeneous integration."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is a chiplet-based package?",
+      "answer": "Chiplet-based packaging connects multiple smaller dies within one module. This improves yield, allows mixing of process nodes, and enables high-performance computing architectures."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why are RDL layers important in packaging?",
+      "answer": "Redistribution Layers (RDL) reroute signals from small die pads to larger bump pitches, enabling fan-out, flip-chip integration, and complex multi-die interconnections."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is flip-chip technology?",
+      "answer": "Flip-chip involves flipping the die and connecting it to the substrate using solder bumps or micro-bumps, providing short interconnects, improved performance, and better thermal handling."
+    },
+
+    {
+      "type": "qa",
+      "question": "What defines a high-density interconnect (HDI) package?",
+      "answer": "HDI packages feature fine-pitch wiring, multiple RDL layers, and dense micro-bump arrays used in AI accelerators, high-bandwidth memory, and advanced compute modules."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is heterogeneous integration in packaging?",
+      "answer": "Heterogeneous integration combines logic, memory, RF, analog, and power components into one package to achieve higher performance and functionality."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is SiC used in power electronics?",
+      "answer": "Silicon Carbide provides high breakdown voltage, fast switching, and excellent thermal conductivity, making it ideal for high-power and high-efficiency applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "What are GaN power devices used for?",
+      "answer": "Gallium Nitride devices offer high switching speed and efficiency, making them suitable for fast chargers, telecom power, and compact power conversion modules."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is an automotive SiC power module?",
+      "answer": "Automotive SiC modules integrate SiC MOSFETs or diodes into a high-reliability package designed for EV inverters, onboard chargers, and powertrain systems."
+    },
+
+    {
+      "type": "qa",
+      "question": "What is the purpose of a glass interposer?",
+      "answer": "Glass interposers provide a stable, low-loss, and cost-effective substrate for high-frequency and high-density routing in advanced electronic packaging."
+    },
+
+    {
+      "type": "qa",
+      "question": "Why is glass used in high-frequency packaging?",
+      "answer": "Glass has low dielectric loss, high dimensional stability, and excellent surface quality, making it suitable for mmWave and RF applications."
+    },
+
+    {
+      "type": "qa",
+      "question": "What are the challenges in advanced substrate R&D?",
+      "answer": "Challenges include achieving fine-line routing, controlling warpage, improving thermal performance, and enabling reliable multi-layer interconnect structures."
+    }
+  ]
+}
