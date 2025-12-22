@@ -1,16 +1,30 @@
 {
   "name": "semiconductor-backend",
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+
+    "// Prisma: Generate": "",
+    "prisma:generate:pg": "prisma generate --schema=prisma/postgres/schema.prisma",
+    "prisma:generate:mongo": "prisma generate --schema=prisma/mongo/schema.prisma",
+    "prisma:generate": "npm run prisma:generate:pg && npm run prisma:generate:mongo",
+
+    "// Prisma: Migrate / Push": "",
+    "prisma:migrate:pg": "prisma migrate dev --schema=prisma/postgres/schema.prisma --config=prisma/postgres/prisma.config.ts",
+    "prisma:push:mongo": "prisma db push --schema=prisma/mongo/schema.prisma --config=prisma/mongo/prisma.config.ts",
+
+    "// Prisma: Reset": "",
+    "prisma:reset:pg": "prisma migrate reset --schema=prisma/postgres/schema.prisma --config=prisma/postgres/prisma.config.ts"
   },
   "dependencies": {
+    "@prisma/client": "^7.2.0",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
     "hono": "^4.11.0",
     "jsonwebtoken": "^9.0.3",
     "mongodb": "^7.0.0",
     "mongoose": "^9.0.2",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "prisma": "^7.2.0"
   },
   "devDependencies": {
     "@types/bun": "latest",

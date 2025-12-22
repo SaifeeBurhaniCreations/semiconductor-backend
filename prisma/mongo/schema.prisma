@@ -1,0 +1,86 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../node_modules/@prisma/mongo"
+}
+
+datasource db {
+  provider = "mongodb"
+}
+
+model SensorReading {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  objectRegistryId  String?
+  toolId            String
+  fabId             String
+  sensor            String
+  value             Float
+  unit              String
+  timestamp         DateTime
+
+  @@index([toolId, timestamp])
+  @@index([objectRegistryId])
+}
+
+model ToolEvent {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  objectRegistryId  String?
+  toolId            String
+  eventType         String
+  severity          String
+  payload           Json
+  timestamp         DateTime
+
+  @@index([toolId, eventType, timestamp])
+  @@index([objectRegistryId])
+}
+
+model ProcessTrace {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  objectRegistryId  String?
+  waferId           String
+  stepName          String
+  toolId            String
+  parameters        Json
+  metrics           Json
+  timestamp         DateTime
+
+  @@index([waferId, timestamp])
+  @@index([objectRegistryId])
+}
+
+model AIModel {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  objectRegistryId  String?
+  name              String
+  version           String
+  modelType         String
+  metadata          Json
+  createdAt         DateTime @default(now())
+
+  @@index([objectRegistryId])
+}
+
+model AIPrediction {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  objectRegistryId  String?
+  modelId           String
+  targetType        String
+  targetId          String
+  prediction        Json
+  confidence        Float
+  timestamp         DateTime
+
+  @@index([modelId, targetType, timestamp])
+  @@index([objectRegistryId])
+}
+
+model Embedding {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  objectRegistryId  String?
+  source            String
+  sourceId          String
+  vector            Float[]
+  createdAt         DateTime @default(now())
+
+  @@index([objectRegistryId])
+}

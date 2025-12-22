@@ -1,0 +1,138 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../../node_modules/@prisma/postgres"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ENUMS
+
+enum UserRole {
+  ADMIN
+  ENGINEER
+  OPERATOR
+  DATA_SCIENTIST
+}
+
+enum ToolStatus {
+  IDLE
+  RUNNING
+  MAINTENANCE
+  ERROR
+}
+
+enum WaferStatus {
+  CREATED
+  PROCESSING
+  HOLD
+  COMPLETED
+  SCRAPPED
+}
+
+enum ObjectType {
+  FAB
+  TOOL
+  WAFER_LOT
+  WAFER
+  PROCESS_STEP
+  USER
+  AI_MODEL
+  SENSOR_STREAM
+  EXTERNAL
+}
+
+// CORE MODELS
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  role      UserRole
+  createdAt DateTime @default(now())
+
+  actions   AuditLog[]
+}
+
+model Fab {
+  id        String   @id @default(uuid())
+  name      String
+  location  String
+  createdAt DateTime @default(now())
+
+  tools     Tool[]
+  wafers    WaferLot[]
+}
+
+model Tool {
+  id          String     @id @default(uuid())
+  fabId       String
+  name        String
+  model       String
+  status      ToolStatus
+  installedAt DateTime
+
+  fab         Fab        @relation(fields: [fabId], references: [id])
+  processes   ProcessStep[]
+}
+
+model WaferLot {
+  id          String       @id @default(uuid())
+  fabId       String
+  lotNumber   String       @unique
+  status      WaferStatus
+  createdAt   DateTime     @default(now())
+
+  fab         Fab          @relation(fields: [fabId], references: [id])
+  wafers      Wafer[]
+}
+
+model Wafer {
+  id          String    @id @default(uuid())
+  waferLotId  String
+  serial      String
+  currentStep String?
+
+  lot         WaferLot  @relation(fields: [waferLotId], references: [id])
+}
+
+model ProcessStep {
+  id          String   @id @default(uuid())
+  toolId      String
+  name        String
+  sequence    Int
+  parameters  Json
+  createdAt   DateTime @default(now())
+
+  tool        Tool     @relation(fields: [toolId], references: [id])
+}
+
+// OBJECT REGISTRY
+
+model ObjectRegistry {
+  id          String     @id @default(uuid())
+  objectType  ObjectType
+  objectId    String
+  displayName String?
+  metadata    Json?
+  createdAt   DateTime   @default(now())
+
+  auditLogs   AuditLog[]
+
+  @@unique([objectType, objectId])
+}
+
+// AUDIT LOGGING
+
+model AuditLog {
+  id                String   @id @default(uuid())
+  userId            String
+  action            String
+  objectRegistryId  String?
+  metadata          Json?
+  createdAt         DateTime @default(now())
+
+  user              User            @relation(fields: [userId], references: [id])
+  object            ObjectRegistry? @relation(fields: [objectRegistryId], references: [id])
+}
