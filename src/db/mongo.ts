@@ -1,8 +1,8 @@
-import { MongoClient } from "mongodb";
+// import { MongoClient } from "mongodb";
 
-export const mongo = new MongoClient(process.env.MONGO_URL!);
-export const mongoDb = mongo.db();
+// export const mongo = new MongoClient(process.env.MONGO_URL!);
+// export const mongoDb = mongo.db();
 
-// import { PrismaClient } from "@prisma/mongo"
+import { PrismaClient } from "@prisma/mongo"
 
-// export const mongo = new PrismaClient()
+export const mongo = new PrismaClient()

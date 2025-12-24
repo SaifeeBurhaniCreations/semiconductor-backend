@@ -1,9 +1,9 @@
-import { Pool } from "pg";
+// import { Pool } from "pg";
 
-export const pg = new Pool({
-  connectionString: process.env.POSTGRES_URL,
-});
+// export const pg = new Pool({
+//   connectionString: process.env.POSTGRES_URL,
+// });
 
-// import { PrismaClient } from "@prisma/postgres"
+import { PrismaClient } from "@prisma/postgres"
 
-// export const pg = new PrismaClient()
+export const pg = new PrismaClient()

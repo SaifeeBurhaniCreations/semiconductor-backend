@@ -7,7 +7,7 @@ import { employeesRoute } from "./routes/employees";
 import { authMiddleware } from "./auth/middleware";
 import { mongo } from "./db/mongo";
 // import connectDB from "./db/config";
-await mongo.connect();
+await mongo.$connect();
 const app = new Hono();
 app.use(cors());
 app.get("/", (c) => {
