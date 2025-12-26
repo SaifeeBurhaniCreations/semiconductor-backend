@@ -1,11 +1,9 @@
-import { serve } from "bun";
 import { Hono } from "hono";
-import { cors } from "hono/cors";
-import "dotenv/config";
-import { loginRoute } from "./auth/login";
-import { employeesRoute } from "./routes/employees";
-import { authMiddleware } from "./auth/middleware";
+import { systemRoutes } from "./routes/system";
+import { aiRoutes } from "./routes/ai";
+import { infraRoutes } from "./routes/infra";
 import { mongo } from "./db/mongo";
+import { cors } from "hono/cors";
 // import connectDB from "./db/config";
 await mongo.$connect();
 const app = new Hono();
@@ -16,10 +14,9 @@ app.get("/", (c) => {
 
 // connectDB();
 
-app.route("/login", loginRoute);
-
-app.use("/employees/*", authMiddleware);
-app.route("/employees", employeesRoute);
+app.route("/system", systemRoutes);
+app.route("/ai", aiRoutes);
+app.route("/infra", infraRoutes);
 
 app.post("/api/v1/login", async (c) => {
   const { username, password } = await c.req.json();
