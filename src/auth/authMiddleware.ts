@@ -1,25 +1,27 @@
-import { verifyToken } from "./jwt";
-import { ROLE_CAPABILITIES } from "../access/roleCapabilities";
+import { verifyAccessToken } from "./jwt";
+import { MiddlewareWrapper } from "../types/types";
+import { UserContext } from "../types/core";
+import { AccessTokenPayload } from "../types/jwt";
 
-export const authMiddleware = async (c, next) => {
+export const authMiddleware: MiddlewareWrapper = async (c, next) => {
   const auth = c.req.header("authorization");
   if (!auth) return c.json({ error: "Unauthorized" }, 401);
 
   try {
     const token = auth.replace("Bearer ", "");
-    const decoded = verifyToken(token);
+    const decoded = verifyAccessToken(token) as AccessTokenPayload;
 
-    const roleCaps = ROLE_CAPABILITIES[decoded.role] || [];
-
-    c.set("user", {
+    const user: UserContext = {
       id: decoded.sub,
       role: decoded.role,
-      capabilities: roleCaps,
-      twoFactorVerified: decoded.twoFactorVerified ?? false,
-    });
+      capabilities: decoded.caps,
+      twoFA: decoded.twoFA,
+    };
+
+    c.set("user", user);
 
     await next();
   } catch {
-    return c.json({ error: "Invalid token" }, 401);
+    return c.json({ error: "Invalid or expired token" }, 401);
   }
 };

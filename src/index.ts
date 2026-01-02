@@ -2,10 +2,11 @@ import { Hono } from "hono";
 import { systemRoutes } from "./routes/system";
 import { aiRoutes } from "./routes/ai";
 import { infraRoutes } from "./routes/infra";
-import { mongo } from "./db/mongo";
+// import { mongo } from "./db/mongo";
 import { cors } from "hono/cors";
+import { meRoute } from "./routes/me";
 // import connectDB from "./db/config";
-await mongo.$connect();
+// await mongo.$connect();
 const app = new Hono();
 app.use(cors());
 app.get("/", (c) => {
@@ -14,9 +15,10 @@ app.get("/", (c) => {
 
 // connectDB();
 
-app.route("/system", systemRoutes);
-app.route("/ai", aiRoutes);
-app.route("/infra", infraRoutes);
+app.route("/api/v1/system", systemRoutes);
+app.route("/api/v1/ai", aiRoutes);
+app.route("/api/v1/infra", infraRoutes);
+app.route("/api/v1/me", meRoute)
 
 app.post("/api/v1/login", async (c) => {
   const { username, password } = await c.req.json();

@@ -4,6 +4,7 @@
     "": {
       "name": "semiconductor-backend",
       "dependencies": {
+        "@logifex/validator": "^0.1.2",
         "@prisma/client": "^7.2.0",
         "bcryptjs": "^3.0.3",
         "dotenv": "^17.2.3",
@@ -37,6 +38,10 @@
     "@electric-sql/pglite-tools": ["@electric-sql/pglite-tools@0.2.7", "", { "peerDependencies": { "@electric-sql/pglite": "0.3.2" } }, "sha512-9dAccClqxx4cZB+Ar9B+FZ5WgxDc/Xvl9DPrTWv+dYTf0YNubLzi4wHHRGRGhrJv15XwnyKcGOZAP1VXSneSUg=="],
 
     "@hono/node-server": ["@hono/node-server@1.19.6", "", { "peerDependencies": { "hono": "^4" } }, "sha512-Shz/KjlIeAhfiuE93NDKVdZ7HdBVLQAfdbaXEaoAVO3ic9ibRSLGIQGkcBbFyuLr+7/1D5ZCINM8B+6IvXeMtw=="],
+
+    "@logifex/core": ["@logifex/core@0.1.2", "", { "peerDependencies": { "hono": "^4.0.0" } }, "sha512-wndQ6dI3qhoGRrh6wskuzlMC8K8aWmzvate/4/AuSEwNymhn17xlJDYsENEENuil8JMS/vBqGK4OB7TWvynwLQ=="],
+
+    "@logifex/validator": ["@logifex/validator@0.1.2", "", { "dependencies": { "@logifex/core": "^0.1.0" }, "peerDependencies": { "hono": "^4.0.0", "zod": "^3.23.0" } }, "sha512-Cdb6f/bBD+LRETB8rM5+QnT+LmA1sRlz2glZGzXWaCFDd1q0bH5IGP5P89YbIWrH+rQ8pWSaacO4LojA3NcVtA=="],
 
     "@mongodb-js/saslprep": ["@mongodb-js/saslprep@1.4.4", "", { "dependencies": { "sparse-bitfield": "^3.0.3" } }, "sha512-p7X/ytJDIdwUfFL/CLOhKgdfJe1Fa8uw9seJYvdOmnP9JBWGWHW69HkOixXS6Wy9yvGf1MbhcS6lVmrhy4jm2g=="],
 
@@ -307,6 +312,8 @@
     "xtend": ["xtend@4.0.2", "", {}, "sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ=="],
 
     "zeptomatch": ["zeptomatch@2.0.2", "", { "dependencies": { "grammex": "^3.1.10" } }, "sha512-H33jtSKf8Ijtb5BW6wua3G5DhnFjbFML36eFu+VdOoVY4HD9e7ggjqdM6639B+L87rjnR6Y+XeRzBXZdy52B/g=="],
+
+    "zod": ["zod@3.25.76", "", {}, "sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ=="],
 
     "@prisma/dev/hono": ["hono@4.10.6", "", {}, "sha512-BIdolzGpDO9MQ4nu3AUuDwHZZ+KViNm+EZ75Ae55eMXMqLVhDFqEMXxtUe9Qh8hjL+pIna/frs2j6Y2yD5Ua/g=="],
 

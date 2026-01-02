@@ -5,8 +5,8 @@ const pg = new Pool({
   connectionString: process.env.POSTGRES_URL,
 });
 
-const EMAIL = "admin@company.com";
-const PASSWORD = "ChangeMeNow123"; // change after first login
+const EMAIL = "admin";
+const PASSWORD = "password"; // change after first login
 
 async function run() {
   const hash = await bcrypt.hash(PASSWORD, 12);
@@ -26,7 +26,7 @@ async function run() {
     [userId]
   );
 
-  console.log("✅ Admin user created:", EMAIL);
+  console.log("Admin user created:", EMAIL);
   process.exit(0);
 }
 

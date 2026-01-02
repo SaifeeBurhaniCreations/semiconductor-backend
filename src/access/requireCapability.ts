@@ -1,18 +1,22 @@
-import { Capability } from "./capabilities";
+import { CapabilityId } from "../types/capability";
+import { UserContext } from "../types/core";
 
-export const requireCapability = (capability: Capability) =>
+
+
+export const requireCapability = (cap: CapabilityId) =>
   async (c, next) => {
-    const user = c.get("user");
+    const user = c.get("user") as UserContext;
 
-    if (
-      user.capabilities.includes("*") ||
-      user.capabilities.includes(capability)
-    ) {
-      return next();
+    const match = user.capabilities.find(
+      (uc) => uc.id === cap
+    );
+
+    if (!match) {
+      return c.json({ error: "Forbidden" }, 403);
     }
 
-    return c.json(
-      { error: `Forbidden: missing capability ${capability}` },
-      403
-    );
+    // risk-based hook (future)
+    c.set("activeCapability", match);
+
+    await next();
   };

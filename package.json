@@ -13,6 +13,7 @@
     "prisma:reset:pg": "prisma migrate reset --schema=prisma/postgres/schema.prisma --config=prisma/postgres/prisma.config.ts"
   },
   "dependencies": {
+    "@logifex/validator": "^0.1.2",
     "@prisma/client": "^7.2.0",
     "bcryptjs": "^3.0.3",
     "dotenv": "^17.2.3",
